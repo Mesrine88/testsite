@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWLabs - IT Services in Berlin</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles if needed */
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex items-center justify-between p-6">
+            <div class="flex items-center space-x-4">
+                <img src="image-1.png" alt="WWLabs Logo" class="h-16">
+                <h1 class="text-2xl font-bold">WWLabs.cc</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#services" class="hover:text-blue-500">Services</a></li>
+                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-12">
+
+        <!-- Home Section -->
+        <section id="home" class="text-center py-20 bg-blue-50">
+            <h2 class="text-4xl font-bold mb-6">Welcome to WWLabs.cc</h2>
+            <p class="text-xl mb-6">Expert IT Services in Berlin specializing in System Integration and System Administration</p>
+            <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Learn More</button>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <h2 class="text-3xl font-bold mb-12 text-center">Our Services</h2>
+            <div class="flex flex-wrap justify-around">
+                <!-- Service 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 m-4 w-full sm:w-1/3 lg:w-1/4 text-center">
+                    <h3 class="text-2xl font-bold mb-4">System Integration</h3>
+                    <p class="text-gray-600 mb-4">Seamlessly integrate new systems with your existing infrastructure for optimal performance.</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Read More</button>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 m-4 w-full sm:w-1/3 lg:w-1/4 text-center">
+                    <h3 class="text-2xl font-bold mb-4">System Administration</h3>
+                    <p class="text-gray-600 mb-4">Reliable and efficient administration to keep your systems running smoothly.</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Read More</button>
+                </div>
+                <!-- Add more services as needed -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-blue-50">
+            <h2 class="text-3xl font-bold mb-12 text-center">About Us</h2>
+            <p class="max-w-3xl mx-auto text-center text-xl">WWLabs.cc is a Berlin-based IT services company specializing in system integration and system administration. Our team of experts is dedicated to providing top-notch solutions to meet your business needs.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <h2 class="text-3xl font-bold mb-12 text-center">Contact Us</h2>
+            <form class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg font-medium mb-2">Name</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg font-medium mb-2">Email</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg font-medium mb-2">Message</label>
+                    <textarea id="message" class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="5"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 WWLabs.cc. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
