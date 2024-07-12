@@ -1,0 +1,215 @@
+<html><head><base href="https://wwlabs.de">
+<title>WWLabs - IT Systemintegration & Administration Berlin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --primary-color: #0066cc;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: var(--primary-color);
+  }
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background: #0052a3;
+  }
+  section {
+    padding: 5rem 0;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  .service-card {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  .service-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .about {
+    background: var(--secondary-color);
+  }
+  .contact-info {
+    text-align: center;
+  }
+  footer {
+    background: var(--text-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="wwlabs-logo.png" alt="WWLabs Logo" width="120" height="40">
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>WWLabs</h1>
+      <p>Cutting-edge IT Systemintegration & Administration in Berlin</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Expertise</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-server"></i>
+          <h3>System Integration</h3>
+          <p>Seamless integration of diverse IT systems to optimize your business processes.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-network-wired"></i>
+          <h3>Network Administration</h3>
+          <p>Efficient management and maintenance of your IT infrastructure for peak performance.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Cybersecurity</h3>
+          <p>Robust security solutions to protect your valuable data and systems from threats.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Solutions</h3>
+          <p>Tailored cloud strategies to enhance flexibility and scalability of your IT operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About WWLabs</h2>
+      <p>WWLabs is a forward-thinking IT service provider based in the heart of Berlin. We specialize in system integration and administration, leveraging cutting-edge technologies to empower businesses in the digital age. Our team of skilled professionals is dedicated to delivering innovative solutions that drive efficiency, security, and growth for our clients.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <div class="contact-info">
+        <p>Ready to transform your IT infrastructure? Contact us today!</p>
+        <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="264f4840496651514a474455084243">[email&#160;protected]</a></p>
+        <p>Phone: +49 30 9876 5432</p>
+        <p>Address: Technologiepark 7, 10587 Berlin</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 WWLabs. All rights reserved.</p>
+    </div>
+  </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>
